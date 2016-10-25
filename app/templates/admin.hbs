@@ -2,6 +2,8 @@
 
 {{#each model as |article|}}
   <h3>{{article.title}}</h3>
+  <button {{action 'destroyArticle' article}}>Delete Article</button>
+  {{update-article article=article update="update"}}
 {{/each}}
 
 {{new-article saveArticle2="saveArticle3"}}
