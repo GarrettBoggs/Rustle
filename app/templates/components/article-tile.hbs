@@ -1,5 +1,5 @@
 
-<h1>{{article.title}}</h1>
+{{#link-to 'article' article.id}}<h1>{{article.title}}</h1>{{/link-to}}
 <p>{{article.author}}</p>
 <p>{{article.category}}</p>
 <img src="{{article.image}}" alt="" />

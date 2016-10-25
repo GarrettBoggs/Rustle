@@ -7,7 +7,9 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
-  this.route('article');
+  this.route('article', {path: '/article/:article_id'});
+  this.route('article-form');
+  this.route('admin');
 });
 
 export default Router;
